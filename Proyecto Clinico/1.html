@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Interactivo - Ventas</title>
+  <link rel="stylesheet" href="1.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Barra lateral / Aside -->
+    <aside class="sidebar">
+      <h2>CafeRapi</h2>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Ventas</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Ingreso Por Mes</a></li>
+        <li><a href="#">Cerrar Sesión</a></li>
+      </ul>
+    </aside>
+
+    <div class="dashboard">
+      <header class="dashboard-header">
+        <h1>📊 CafeRapi</h1>
+        <div class="filter-container">
+          <label for="yearFilter">Selecciona Año:</label>
+          <select id="yearFilter">
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+          </select>
+        </div>
+      </header>
+
+      <main class="dashboard-content">
+        <div class="card chart-card">
+          <h2>Ventas por Mes</h2>
+          <canvas id="barChart"></canvas>
+        </div>
+        <div class="card chart-card">
+          <h2>Productos más Utilizados</h2>
+          <canvas id="pieChart"></canvas>
+        </div>
+        <div class="card chart-card">
+          <h2>Ingreso Por Mes</h2>
+          <canvas id="lineChart"></canvas>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="1.js"></script>
+</body>
+</html>

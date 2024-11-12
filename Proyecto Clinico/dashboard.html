@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="main-content">
+        <header class="main-header">
+            <h1>Dashboard</h1>
+            <div class="user-profile">
+                <span>Bienvenido, Admin</span>
+                <img src="./img/psicologo3.png" alt="Perfil de usuario">
+            </div>
+        </header>   
+
+        <section class="cards-overview">
+            <div class="card">
+                <h3>Talleres Activos</h3>
+                <p>8</p>
+            </div>
+            <div class="card">
+                <h3>Psicólogos Registrados</h3>
+                <p>15</p>
+            </div>
+            <div class="card">
+                <h3>Usuarios Suscritos</h3>
+                <p>102</p>
+            </div>
+            <div class="card">
+                <h3>Mensajes Recibidos</h3>
+                <p>27</p>
+            </div>
+        </section>
+
+        <section class="charts">
+            <div class="chart">
+                <h3>Usuarios Suscritos por Mes</h3>
+                <canvas id="subscriptionChart"></canvas>
+            </div>
+            <div class="chart">
+                <h3>Talleres Más Populares</h3>
+                <canvas id="workshopChart"></canvas>
+            </div>
+        </section>
+    </main>       
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

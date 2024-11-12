@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familias</title>
+    <link rel="stylesheet" href="./familias.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="talleres.html">TALLERES</a></li>
+                <div class="logo">
+                    <img src="./img/logo.png" alt="Logo Corazón Feliz">
+                </div>
+                <li><a href="psicologos.html">PSICÓLOGOS</a></li>
+                <li><a href="Familiares.html">FAMILIARES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="baner">
+        <div class="container">
+            <div class="imagen">
+                <img src="img/familia1.png" alt="Talleres disponibles">
+            </div>
+            <div class="content">
+                <h1>Familias</h1>
+                <p>Descubre nuestros talleres diseñados para mejorar el bienestar emocional y el desarrollo personal.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="familias">
+        <h1>Bienvenidos a la sección de apoyo familiar</h1>
+        <p>Aquí encontrarás información valiosa sobre la depresión y otros temas que afectan a las familias.</p>
+    </section> 
+    <section id="informacion" class="informacion">
+        <h2>Información sobre la Depresión</h2>
+        <div class="datos">
+            <p>
+                La depresión es un trastorno del estado de ánimo que afecta a muchas personas. 
+                Es importante que los padres reconozcan los síntomas y busquen ayuda cuando sea necesario.
+            </p>
+            <ul>
+                <li><strong>Síntomas:</strong>Tristeza persistente, pérdida de interés en actividades, cambios en el apetito, etc.</li>
+                <li><strong>Causas:</strong>Factores genéticos, biológicos, ambientales y psicológicos.</li>
+                <li><strong>Tratamientos:</strong> Terapia, medicamentos y apoyo social.</li>
+            </ul>
+        </div>
+    </section> 
+    <section id="recursos" class="recursos">
+        <h2>Recursos Útiles</h2>
+        <div class="recursos-lista">
+            <div class="recurso">
+                <h3>Guía de Recursos para Familias</h3>
+                <p>Una recopilación de recursos locales y en línea para ayudar a las familias a navegar por la depresión.</p>
+                <button class="btn" onclick="openModal('modal-recurso-1')">Solicitar más información</button>
+            </div>
+            <div class="recurso">
+                <h3>Líneas de Ayuda</h3>
+                <p>Números de contacto de líneas de ayuda disponibles las 24 horas para asistencia inmediata.</p>
+                <button class="btn" onclick="openModal('modal-recurso-2')">Contáctanos</button>
+            </div>
+            <div class="recurso">
+                <h3>Libros Recomendados</h3>
+                <p>Lecturas recomendadas que pueden ayudar a comprender mejor la depresión.</p>
+                <button class="btn" onclick="openModal('modal-recurso-3')">Más Información</button>
+            </div>
+        </div>
+    </section>   
+    <section id="articulos" class="articulos">
+        <h2>Artículos Útiles</h2>
+        <div class="articulos-lista">
+            <article class="articulo">
+                <h3>Cómo hablar sobre la depresión con tus hijos</h3>
+                <p>Consejos sobre cómo abordar el tema de la depresión con los niños y adolescentes.</p>
+                <button class="btn" onclick="openModal('modal-articulo-1')">Leer Más</button>
+            </article>
+            <article class="articulo">
+                <h3>Señales de Alerta: ¿Cuándo buscar ayuda?</h3>
+                <p>Identifica las señales que indican que es necesario buscar ayuda profesional.</p>
+                <button class="btn" onclick="openModal('modal-articulo-2')">Leer Más</button>
+            </article>
+            <article class="articulo">
+                <h3>Impacto de la Depresión en la Familia</h3>
+                <p>Explora cómo la depresión afecta a la dinámica familiar y cómo manejarlo.</p>
+                <button class="btn" onclick="openModal('modal-articulo-3')">Leer Más</button>
+            </article>
+        </div>
+    </section> 
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>Si tienes preguntas o necesitas más información, no dudes en ponerte en contacto con nosotros.</p>
+        <form id="contact-form" onsubmit="submitForm(event)">
+            <input type="text" placeholder="Nombre" required class="form-input">
+            <input type="email" placeholder="Email" required class="form-input">
+            <textarea placeholder="Tu mensaje" required class="form-textarea"></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+
+            <!-- Mensaje de éxito (inicialmente oculto) -->
+        <div id="success-message" class="success-message" style="display: none;">
+        <p>Tu mensaje ha sido enviado con éxito. Nos pondremos en contacto contigo pronto.</p>
+    </div>
+    </section>
+    <section class="modales">
+        <div id="modal-recurso-1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-recurso-1')">&times;</span>
+                <h2>Guía de Recursos para Familias</h2>
+                <p>Detalles sobre la guía, incluyendo enlaces y recursos locales para familias que necesitan apoyo.</p>
+            </div>
+        </div>
+
+        <div id="modal-recurso-2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-recurso-2')">&times;</span>
+                <h2>Líneas de Ayuda</h2>
+                <p>Información detallada sobre las líneas de ayuda disponibles y cómo acceder a ellas.</p>
+            </div>
+        </div>
+
+        <div id="modal-recurso-3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-recurso-3')">&times;</span>
+                <h2>Libros Recomendados</h2>
+                <p>Lista de libros que pueden ayudar a las familias a entender mejor la depresión y cómo ayudar a sus seres queridos.</p>
+            </div>
+        </div>
+
+        <div id="modal-articulo-1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-articulo-1')">&times;</span>
+                <h2>Cómo hablar sobre la depresión con tus hijos</h2>
+                <p>Consejos y estrategias para abordar este tema delicado con tus hijos de manera efectiva.</p>
+            </div>
+        </div>
+
+        <div id="modal-articulo-2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-articulo-2')">&times;</span>
+                <h2>Señales de Alerta: ¿Cuándo buscar ayuda?</h2>
+                <p>Detalles sobre las señales de alerta y cómo pueden los padres reconocerlas en sus hijos.</p>
+            </div>
+        </div>
+
+        <div id="modal-articulo-3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-articulo-3')">&times;</span>
+                <h2>Impacto de la Depresión en la Familia</h2>
+                <p>Descripción de cómo la depresión puede afectar a la familia y recursos para enfrentarlo.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contáctanos</h3>
+                <p>Email: info@tusitio.com</p>
+                <p>Teléfono: +123 456 7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Información</h3>
+                <p><a href="#">Política de privacidad</a></p>
+                <p><a href="#">Términos de servicio</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Tu Sitio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="familias.js"></script>
+</body>
+</html>
