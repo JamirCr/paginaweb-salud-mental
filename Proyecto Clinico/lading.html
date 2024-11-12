@@ -1,178 +1,238 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corazón Feliz</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJwL+FNOt3b97Vj5J6z+6y9Lljc2V/cgdyw50arA6szjXgZwHf8Bz7wH7jF6" crossorigin="anonymous">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
     <header class="header">
         <div class="logo">
-            <img src="./img/logo.png" alt="Logo Corazón Feliz" class="img-fluid">
+            <img src="./img/logo.png" alt="">
         </div>
         <a href="./login.html">
-            <button class="btn btn-primary">INGRESAR</button>
+        <button class="btn" >INGRESAR</button>
         </a>
     </header>
-
     <!-- Slider -->
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./img/Slider1.png" class="d-block w-100" alt="Bienestar emocional">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Bienestar emocional</h5>
-                    <p>Ofrecemos terapias especializadas que se adaptan a tus necesidades, enfocadas en ayudarte a manejar la ansiedad y la depresión de forma efectiva.</p>
+    <div class="slider">
+        <!-- lista de elementos -->
+        <div class="lista">
+            <div class="elementos activo">
+                <img src="./img/Slider1.png" alt="">
+                <div class="contenido">
+                    <p>info</p>
+                    <h2>bienestar emocional</h2>
+                    <p>
+                        Ofrecemos terapias especializadas que se adaptan a tus necesidades, enfocadas en ayudarte a manejar la ansiedad y la depresión de forma efectiva.
+                    </p>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="./img/Slider2.png" class="d-block w-100" alt="Apoyo especializado">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Apoyo especializado</h5>
-                    <p>Creamos un espacio seguro donde los jóvenes pueden expresar sus emociones y aprender herramientas para enfrentar los desafíos de la vida.</p>
+            <div class="elementos">
+                <img src="./img/Slider2.png" alt="">
+                <div class="contenido">
+                    <p>info</p>
+                    <h2>Apoyo especializado</h2>
+                    <p>
+                        Creamos un espacio seguro donde los jóvenes pueden expresar sus emociones y aprender herramientas para enfrentar los desafíos de la vida.
+                    </p>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="./img/Slider3.png" class="d-block w-100" alt="Terapias">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Terapias</h5>
-                    <p>Especialistas acompañan a los adultos en su camino hacia la recuperación emocional y una vida plena.</p>
+            <div class="elementos">
+                <img src="./img/Slider3.png" alt="">
+                <div class="contenido">
+                    <p>info</p>
+                    <h2>Terapias</h2>
+                    <p>
+                        Nuestro equipo de especialistas acompaña a los adultos en su camino hacia la recuperación emocional y una vida plena
+                    </p>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="./img/Slider4.png" class="d-block w-100" alt="Sesiones y talleres">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Sesiones y talleres</h5>
-                    <p>Participa en talleres interactivos y sesiones grupales que fomentan la conexión y el crecimiento emocional.</p>
+            <div class="elementos">
+                <img src="./img/Slider4.png" alt="">
+                <div class="contenido">
+                    <p>info</p>
+                    <h2>Sesiones y talleres</h2>
+                    <p>
+                        Participa en talleres interactivos y sesiones grupales que fomentan la conexión y el crecimiento emocional.
+                    </p>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="./img/Slider5.png" class="d-block w-100" alt="Atención personalizada">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Atención personalizada</h5>
-                    <p>Cada persona es única. Diseñamos tratamientos personalizados para cubrir tus necesidades específicas.</p>
+            <div class="elementos">
+                <img src="./img/Slider5.png" alt="">
+                <div class="contenido">
+                    <p>info</p>
+                    <h2>Atención personalizada</h2>
+                    <p>
+                        Cada persona es única. Diseñamos tratamientos personalizados para cubrir tus necesidades específicas.
+                    </p>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <div class="text-center my-4">
-        <button class="btn btn-success">REGISTRATE</button>
-    </div>
-
-    <!-- Testimonios -->
-    <h2 class="titulo-testimonio text-center my-4">TESTIMONIOS</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-12">
-                <div class="seccion_comentario">
-                    <img src="./img/user1.png" alt="Pedro Perez" class="img-fluid">
-                    <div class="estrellas">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h3 class="nombre">Pedro Perez</h3>
-                    <p class="descripcion">“El equipo de la clínica me ayudó a encontrar herramientas para manejar mi ansiedad. Ahora vivo cada día con más confianza y serenidad.”</p>
+        <!-- Botones de movimiento -->
+        <div class="mover">
+            <button id="anterior"><</button>
+            <button id="siguente">></button>
+        </div>
+        <!-- Caja -->
+        <div class="caja">
+            <div class="elementos activo">
+                <img src="./img/Slider1.png">
+                <div class="contenido">
                 </div>
             </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="seccion_comentario">
-                    <img src="./img/user2.png" alt="Juan Vazquez" class="img-fluid">
-                    <div class="estrellas">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h3 class="nombre">Juan Vazquez</h3>
-                    <p class="descripcion">“Me brindaron el apoyo cuando más lo necesitaba y gracias a ellos pude superar mi ansiedad.”</p>
+            <div class="elementos">
+                <img src="./img/Slider2.png">
+                <div class="contenido">
                 </div>
             </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="seccion_comentario">
-                    <img src="./img/user3.png" alt="Jorge Silva" class="img-fluid">
-                    <div class="estrellas">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h3 class="nombre">Jorge Silva</h3>
-                    <p class="descripcion">“El apoyo de los terapeutas ha sido fundamental para mejorar mi calidad de vida.”</p>
+            <div class="elementos">
+                <img src="./img/Slider3.png">
+                <div class="contenido">
                 </div>
             </div>
-            <div class="col-md-3 col-sm-12">
-                <div class="seccion_comentario">
-                    <img src="./img/user4.png" alt="Carla Rodríguez" class="img-fluid">
-                    <div class="estrellas">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h3 class="nombre">Carla Rodríguez</h3>
-                    <p class="descripcion">“Gracias a la clínica, he recuperado mi paz interior y ahora sé cómo gestionar mi ansiedad de manera saludable.”</p>
+            <div class="elementos">
+                <img src="./img/Slider4.png">
+                <div class="contenido">   
+                </div>
+            </div>
+            <div class="elementos">
+                <img src="./img/Slider5.png">
+                <div class="contenido">
                 </div>
             </div>
         </div>
     </div>
+    <div class="btn-registrar">
+        <button class="btn">REGISTRATE</button>
+    </div>
+    <h2 class="titulo-testimonio">TESTIMONIOS</h2>
+    <article class="comentarios">
+        <div class="seccion_comentario">
+            <img src="./img/user1.png" alt="">
+            <div class="estrellas">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3 class="nombre">Pedro Perez</h3>
+            <p class="descripcion">“El equipo de la clínica me ayudó a encontrar herramientas para manejar mi ansiedad.
+                Ahora vivo cada día con más confianza y serenidad.”</p>
+        </div>
+        <div class="seccion_comentario">
+            <img src="./img/user2.png" alt="">
+            <div class="estrellas">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3 class="nombre">Juan Vazquez</h3>
+            <p class="descripcion">“Me brindo el apoyo cuando mas lo necesita y gracias a ellos pude superar mi ansiedad”</p>
+            nobis.</p>
+        </div>
+        <div class="seccion_comentario">
+            <img src="./img/user3.png" alt="">
+            <div class="estrellas">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3 class="nombre">Jorge Silva</h3>
+            <p class="descripcion">“El apoyo de los terapeutas ha sido fundamental para mejorar mi calidad de vida.”</p>
+        </div>
+        <div class="seccion_comentario">
+            <img src="./img/user4.png" alt="">
+            <div class="estrellas">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h3 class="nombre">Carla Rodríguez</h3>
+            <p class="descripcion">“Gracias a la clínica, he recuperado mi paz interior y ahora sé cómo gestionar mi ansiedad de manera saludable.”</p>
+        </div>
+    </article>
+    <h2 class="titulo-nosotros">Nosotros</h2>
+    <article class="nosotros">
+        <div class="seccion_nosotros">
+            <img src="./img/nosotros_1.png" alt="">
+            <h3 class="nombre">Comprometidos con tu bienestar emocional</h3>
+            <p class="descripcion">En Corazón Feliz, nos dedicamos a brindar apoyo especializado a adolescentes y adultos que enfrentan ansiedad y depresión.</p>
+        </div>
+        <div class="seccion_nosotros">
+            <img src="./img/nosotros_2.png" alt="">
+            <h3 class="nombre">Transformamos vidas con empatía</h3>
+            <p class="descripcion">Somos una clínica comprometida con mejorar la salud mental mediante programas personalizados de tratamiento.</p>
+        </div>
+        <div class="seccion_nosotros">
+            <img src="./img/nosotros_3.png" alt="">
+            <h3 class="nombre">Tu espacio para sanar y florecer</h3>
+            <p class="descripcion">En Corazón Feliz, ofrecemos una atención cálida y cercana a quienes sufren de ansiedad y depresión. Nos enfocamos en generar un ambiente de confianza y aprendizaje.</p>
+        </div>
+        <div class="seccion_nosotros">
+            <img src="./img/nosotros_4.png" alt="">
+            <h3 class="nombre">Innovamos para tu salud emocional</h3>
+            <p class="descripcion">Nuestra misión es proporcionar terapias efectivas e innovadoras para el tratamiento de la ansiedad y la depresión.</p>
+        </div>
+        <div class="seccion_nosotros">
+            <img src="./img/nosotros_5.png" alt="">
+            <h3 class="nombre">Cuidamos de tu mente y tu corazón</h3>
+            <p class="descripcion">Entendemos que la salud mental es fundamental para una vida equilibrada. En Corazón Feliz, acompañamos a adolescentes y adultos en su proceso de sanación.</p>
+        </div>
+        <div class="seccion_nosotros">
+            <img src="./img/nosotros_6.png" alt="">
+            <h3 class="nombre">Juntos hacia un futuro más brillante</h3>
+            <p class="descripcion">En Corazón Feliz, creemos que cada persona tiene el potencial de encontrar la felicidad y el equilibrio emocional.</p>
+        </div>
+    </article>
+    <article class="suscribete">
+        <h2>¡Únete a nuestra comunidad!</h2>
+        <p>Regístrate para recibir nuestras novedades, <br> recursos gratuitos y promociones exclusivas.</p>
+        <div class="btn-suscribete">
+            <button class="boton">REGISTRATE
+                <span></span>
+                <span></span>
+            </button>
 
-    <!-- Nosotros -->
-    <h2 class="titulo-nosotros text-center my-4">Nosotros</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="seccion_nosotros">
-                    <img src="./img/nosotros_1.png" alt="Comprometidos" class="img-fluid">
-                    <h3>Comprometidos con tu bienestar emocional</h3>
-                    <p>Nos dedicamos a brindar apoyo especializado a adolescentes y adultos que enfrentan ansiedad y depresión.</p>
+        </div>
+    </article>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contáctanos</h3>
+                <p>Email: corazonfeliz@hotmail.com</p>
+                <p>Teléfono: +51 987 666 112</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="seccion_nosotros">
-                    <img src="./img/nosotros_2.png" alt="Transformamos vidas" class="img-fluid">
-                    <h3>Transformamos vidas con empatía</h3>
-                    <p>Mejoramos la salud mental mediante programas personalizados de tratamiento.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="seccion_nosotros">
-                    <img src="./img/nosotros_3.png" alt="Tu espacio para sanar" class="img-fluid">
-                    <h3>Tu espacio para sanar y florecer</h3>
-                    <p>Ofrecemos una atención cálida y cercana en un ambiente de confianza.</p>
-                </div>
+            <div class="footer-section">
+                <h3>Información</h3>
+                <p><a href="#">Política de privacidad</a></p>
+                <p><a href="#">Términos de servicio</a></p>
             </div>
         </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer text-center py-3">
-        <p>&copy; 2024 Corazón Feliz | Todos los derechos reservados.</p>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Corazón Feliz. Todos los derechos reservados.</p>
+        </div>
     </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ksmCCgpdNKf3IdfW6IzKzE5huY5J9ZhwjVVs0YlvA9u61jo9y42xkBkToiKHbs1R" crossorigin="anonymous"></script>
+    <script src="landing.js"></script>
 </body>
-
-</html>
+</html>  
